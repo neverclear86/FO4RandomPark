@@ -1,0 +1,25 @@
+{
+  "name": "FO4Random",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.7.6",
+    "electron-pug": "^1.5.1",
+    "riot": "^3.7.0"
+  },
+  "devDependencies": {
+    "electron-connect": "^0.6.2",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-riot": "^1.1.1",
+    "pug": "^2.0.0-rc.4"
+  }
+}
