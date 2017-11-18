@@ -9,7 +9,7 @@ const path = require('path');
 const url = require('url');
 
 const locals = {};
-const pug = require('electron-pug')({pretty: true}, locals);
+// const pug = require('electron-pug')({pretty: true}, locals);
 
 let mainWindow;
 
@@ -17,7 +17,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({width: 800, height: 600});
 
   mainWindow.loadURL(url.format({
-    pathname: 'src/views/index.pug',
+    pathname: 'docs/index.html',
     protocol: 'file:',
     slashes: true
   }));
