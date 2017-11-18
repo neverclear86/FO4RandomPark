@@ -1,8 +1,10 @@
+"use strict";
+
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
 const protocol = electron.protocol;
-// Module to create native browser window.
+// Module to create native browser window.m
 const BrowserWindow = electron.BrowserWindow;
 
 const path = require('path');
@@ -12,12 +14,12 @@ const locals = {};
 // const pug = require('electron-pug')({pretty: true}, locals);
 
 let mainWindow;
-
+// console.log(electron);
 app.on('ready', () => {
   mainWindow = new BrowserWindow({width: 800, height: 600});
 
   mainWindow.loadURL(url.format({
-    pathname: 'docs/index.html',
+    pathname: 'index.html',
     protocol: 'file:',
     slashes: true
   }));
@@ -31,7 +33,7 @@ app.on('ready', () => {
     const requestedUrl = req.url.substr(7);
     console.log(requestedUrl);
     if (path.isAbsolute(requestedUrl)) {
-      callback(path.normalize(path.join(__dirname, requestedUrl)));
+      callback(path.normalize(path.join(__dirname, 'docs', requestedUrl)));
     } else {
       callback(requestedUrl);
     }

@@ -5,7 +5,6 @@
  */
 
 const gulp = require('gulp');
-const electron = require('electron-connect').server.create();
 const riot = require('gulp-riot');
 const pug = require('gulp-pug');
 
