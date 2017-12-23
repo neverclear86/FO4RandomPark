@@ -24,7 +24,7 @@ function getDirs(dir) {
 }
 
 gulp.task('build:pug', () => {
-  gulp.src('src/views/**/*.pug')
+  gulp.src('src/views/**/[^_]*.pug')
   .pipe(pug())
   .pipe(gulp.dest('docs/'))
 })
@@ -51,7 +51,13 @@ gulp.task('build:riot', () => {
     .pipe(gulp.dest('docs/tags/'))
 })
 
-gulp.task('build', ['build:pug', 'build:riot'], () => {
+gulp.task('build:js', () => {
+  gulp.src('src/js/**/*.js')
+    .pipe(gulp.dest('docs/js/'))
+})
+
+gulp.task('build', ['build:pug', 'build:riot', 'build:js'], () => {
   gulp.watch(['src/views/**/*.pug'], ['build:pug'])
   gulp.watch(['src/tags/**/*.tag'], ['build:riot'])
+  gulp.watch(['src/js/**/*.js'], ['build:js'])
 })

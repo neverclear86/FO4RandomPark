@@ -3,17 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "dependencies": {
-    "gulp-uglify": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "electron": "^1.7.9",
+    "electron": "1.7.10",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^3.3.0",
     "gulp-riot": "^1.1.1",
-    "vue-loader": "^13.6.0",
-    "webpack": "^3.10.0"
+    "gulp-uglify": "^3.0.0"
   },
   "scripts": {
     "start": "./node_modules/.bin/electron .",

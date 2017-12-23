@@ -1,13 +1,9 @@
 doctype html
 html
-  head
-    title FO4Random
-    script(src="https://cdn.jsdelivr.net/npm/riot@3.7/riot.min.js")
-
+  include common/_head
+  
   body
     hello
-    test
 
   script(src="/tags/common.js")
-  script(type="text/javascript").
-    riot.mount('*');
+  script(src="/js/mount.js")
