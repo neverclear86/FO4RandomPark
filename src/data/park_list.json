@@ -1,228 +1,226 @@
 {
   "Strngth": [
     {
-      "name": "Iron Fist",
+      "name": "Iron Fist"
     },
     {
-      "name": "Big Leagues",
+      "name": "Big Leagues"
     },
     {
-      "name": "Armorer",
+      "name": "Armorer"
     },
     {
-      "name": "Blacksmith",
+      "name": "Blacksmith"
     },
     {
-      "name": "Heavy Gunner",
+      "name": "Heavy Gunner"
     },
     {
-      "name": "Strong Back",
+      "name": "Strong Back"
     },
     {
-      "name": "Steady Aim",
+      "name": "Steady Aim"
     },
     {
-      "name": "Basher",
+      "name": "Basher"
     },
     {
-      "name": "Rooted",
+      "name": "Rooted"
     },
     {
-      "name": "Pain Train",
-    },
+      "name": "Pain Train"
+    }
   ],
   "Perception": [
     {
-      "name": "Pickpocket",
+      "name": "Pickpocket"
     },
     {
-      "name": "Rifleman",
+      "name": "Rifleman"
     },
     {
-      "name": "Awareness",
+      "name": "Awareness"
     },
     {
-      "name": "Locksmith",
+      "name": "Locksmith"
     },
     {
-      "name": "Demolition Expert",
+      "name": "Demolition Expert"
     },
     {
-      "name": "Night Person",
+      "name": "Night Person"
     },
     {
-      "name": "Refractor",
+      "name": "Refractor"
     },
     {
-      "name": "Sniper",
+      "name": "Sniper"
     },
     {
-      "name": "Penetrator",
+      "name": "Penetrator"
     },
     {
-      "name": "Concentrated Fire",
-    },
+      "name": "Concentrated Fire"
+    }
   ],
   "Endurance": [
     {
-      "name": "Toughness",
+      "name": "Toughness"
     },
     {
-      "name": "Lead Belly",
+      "name": "Lead Belly"
     },
     {
-      "name": "Lifegiver",
+      "name": "Lifegiver"
     },
     {
-      "name": "Chem Resistant",
+      "name": "Chem Resistant"
     },
     {
-      "name": "Aquaboy",
+      "name": "Aquaboy"
     },
     {
-      "name": "Rad Resistant",
+      "name": "Rad Resistant"
     },
     {
-      "name": "Adamantium Skeleton",
+      "name": "Adamantium Skeleton"
     },
     {
-      "name": "Cannibal",
+      "name": "Cannibal"
     },
     {
-      "name": "Ghoulish",
+      "name": "Ghoulish"
     },
     {
-      "name": "Solar Powered",
-    },
+      "name": "Solar Powered"
+    }
   ],
   "Charisma": [
     {
-      "name": "Cap Collector",
+      "name": "Cap Collector"
     },
     {
-      "name": "Man Hunter",
+      "name": "Man Hunter"
     },
     {
-      "name": "Lone Wanderer",
+      "name": "Lone Wanderer"
     },
     {
-      "name": "Attack Dog",
+      "name": "Attack Dog"
     },
     {
-      "name": "Animal Friend",
+      "name": "Animal Friend"
     },
     {
-      "name": "Local Leader",
+      "name": "Local Leader"
     },
     {
-      "name": "Party Boy",
+      "name": "Party Boy"
     },
     {
-      "name": "Inspirational",
+      "name": "Inspirational"
     },
     {
-      "name": "Wasteland Whisperer",
+      "name": "Wasteland Whisperer"
     },
     {
-      "name": "Intimidation",
-    },
+      "name": "Intimidation"
+    }
   ],
   "Intelligence": [
     {
-      "name": "V.A.N.S.",
+      "name": "V.A.N.S."
     },
     {
-      "name": "Medic",
+      "name": "Medic"
     },
     {
-      "name": "Gun Nut",
+      "name": "Gun Nut"
     },
     {
-      "name": "Hacker",
+      "name": "Hacker"
     },
     {
-      "name": "Scrapper",
+      "name": "Scrapper"
     },
     {
-      "name": "Science!",
+      "name": "Science!"
     },
     {
-      "name": "Chemist",
+      "name": "Chemist"
     },
     {
-      "name": "Robotics Expert",
+      "name": "Robotics Expert"
     },
     {
-      "name": "Nuclear Physicist",
+      "name": "Nuclear Physicist"
     },
     {
-      "name": "Nerd Rage!",
-    },
+      "name": "Nerd Rage!"
+    }
   ],
   "Agility": [
-
     {
-      "name": "Gunslinger",
+      "name": "Gunslinger"
     },
     {
-      "name": "Commando",
+      "name": "Commando"
     },
     {
-      "name": "Sneak",
+      "name": "Sneak"
     },
     {
-      "name": "Mister Sandman",
+      "name": "Mister Sandman"
     },
     {
-      "name": "Action Boy",
+      "name": "Action Boy"
     },
     {
-      "name": "Moving Target",
+      "name": "Moving Target"
     },
     {
-      "name": "Ninja",
+      "name": "Ninja"
     },
     {
-      "name": "Quick Hands",
+      "name": "Quick Hands"
     },
     {
-      "name": "Blitz",
+      "name": "Blitz"
     },
     {
-      "name": "Gun Fu",
-    },
+      "name": "Gun Fu"
+    }
   ],
   "Luck": [
-
     {
-      "name": "Fortune Finder",
+      "name": "Fortune Finder"
     },
     {
-      "name": "Scrounger",
+      "name": "Scrounger"
     },
     {
-      "name": "Bloody Mess",
+      "name": "Bloody Mess"
     },
     {
-      "name": "Mysterious Stranger",
+      "name": "Mysterious Stranger"
     },
     {
-      "name": "Idiot Savant",
+      "name": "Idiot Savant"
     },
     {
-      "name": "Better Criticals",
+      "name": "Better Criticals"
     },
     {
-      "name": "Critical Banker",
+      "name": "Critical Banker"
     },
     {
-      "name": "Grim Reaper's Sprint",
+      "name": "Grim Reaper's Sprint"
     },
     {
-      "name": "Four Leaf Clover",
+      "name": "Four Leaf Clover"
     },
     {
-      "name": "Ricochet",
-    },
+      "name": "Ricochet"
+    }
   ]
 }
