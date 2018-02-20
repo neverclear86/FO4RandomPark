@@ -3,7 +3,32 @@
     {
       "name": "Iron Fist",
       "rank": [
-
+        {
+          "require": {
+            "Strength": 1
+          }
+        },
+        {
+          "require": {
+            "Strength": 1,
+            "level": 1
+          }
+        },
+        {
+          "require": {
+            "Strength": 1
+          }
+        },
+        {
+          "require": {
+            "Strength": 1
+          }
+        },
+        {
+          "require": {
+            "Strength": 1
+          }
+        }
       ]
     },
     {
