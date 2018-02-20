@@ -1,7 +1,10 @@
 {
-  "Strngth": [
+  "Strength": [
     {
-      "name": "Iron Fist"
+      "name": "Iron Fist",
+      "rank": [
+
+      ]
     },
     {
       "name": "Big Leagues"
