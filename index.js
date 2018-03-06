@@ -17,7 +17,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
   mainWindow.loadURL(url.format({
-    pathname: 'index.html',
+    pathname: 'docs/index.html',
     protocol: 'file:',
     slashes: true
   }))
@@ -31,11 +31,13 @@ app.on('ready', () => {
     const requestedUrl = req.url.substr(7)
     console.log(requestedUrl)
     if (path.isAbsolute(requestedUrl)) {
-      callback(path.normalize(path.join(__dirname, 'docs', requestedUrl)))
+      callback(path.normalize(path.join(__dirname, requestedUrl)))
     } else {
       callback(requestedUrl)
     }
   })
+
+  require("./back/main")
 })
 
 app.on('window-all-closed', function () {

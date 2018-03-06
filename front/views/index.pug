@@ -1,0 +1,50 @@
+doctype html
+html
+  include common/_head
+  
+  body
+    h1 四郎
+    h2 Lv.4
+    
+    h3 SPECIAL
+    table#special
+      tr
+        th S
+        th 10
+      tr
+        th P
+        th 10
+      tr
+        th E
+        th 10
+      tr
+        th C
+        th 10
+      tr
+        th I
+        th 10
+      tr
+        th A
+        th 10
+      tr
+        th L
+        th 10
+    
+    h3 PARK
+    table#park
+      thead
+        - var special = ["Strength", "Perception", "Endurance", "Charisma", "Intelligence", "Agility", "Luck"]
+          //- tr
+          for val in special
+            th(id=val class="special " + val) #{val}
+      tbody
+        - for (var rank = 1; rank <= 10; rank++)
+          tr
+          for val in special
+            th(class="park " + val rank=rank) #{val} #{rank}
+          
+       
+    
+  script(src="/docs/tags/common.js")
+  script(src="/docs/js/mount.js")
+  script(src="/docs/js/test.js")

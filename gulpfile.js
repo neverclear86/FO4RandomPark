@@ -13,8 +13,8 @@ const path = require('path');
 const uglify = require('gulp-uglify');
 
 
-var srcDir = 'src'
-var libDir = 'build'
+var srcDir = 'front'
+var docDir = 'docs'
 
 function getDirs(dir) {
   return fs.readdirSync(dir)
@@ -24,13 +24,13 @@ function getDirs(dir) {
 }
 
 gulp.task('build:pug', () => {
-  gulp.src('src/views/**/[^_]*.pug')
+  gulp.src(path.join(srcDir, 'views/**/[^_]*.pug'))
   .pipe(pug())
-  .pipe(gulp.dest('docs/'))
+  .pipe(gulp.dest(docDir))
 })
 
 gulp.task('build:riot', () => {
-  var tagDir = 'src/tags/'
+  var tagDir = path.join(srcDir, 'tags/')
   var dirs = getDirs(tagDir)
 
   dirs.map(dir => {
@@ -40,7 +40,7 @@ gulp.task('build:riot', () => {
       }))
       .pipe(concat(dir + '.js'))
       .pipe(uglify())
-      .pipe(gulp.dest('docs/tags/'))
+      .pipe(gulp.dest(path.join(docDir, 'tags/')))
   })
 
   gulp.src(path.join(tagDir, '/*.tag'))
@@ -48,16 +48,16 @@ gulp.task('build:riot', () => {
       template: 'pug',
     }))
     .pipe(uglify())
-    .pipe(gulp.dest('docs/tags/'))
+    .pipe(gulp.dest(path.join(docDir, 'tags/')))
 })
 
 gulp.task('build:js', () => {
-  gulp.src('src/js/**/*.js')
-    .pipe(gulp.dest('docs/js/'))
+  gulp.src(path.join(srcDir, 'js/**/*.js'))
+    .pipe(gulp.dest(path.join(docDir, 'js/')))
 })
 
 gulp.task('build', ['build:pug', 'build:riot', 'build:js'], () => {
-  gulp.watch(['src/views/**/*.pug'], ['build:pug'])
-  gulp.watch(['src/tags/**/*.tag'], ['build:riot'])
-  gulp.watch(['src/js/**/*.js'], ['build:js'])
+  gulp.watch([srcDir + '/views/**/*.pug'], ['build:pug'])
+  gulp.watch([srcDir + '/tags/**/*.tag'], ['build:riot'])
+  gulp.watch([srcDir + '/js/**/*.js'], ['build:js'])
 })

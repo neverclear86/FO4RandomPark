@@ -1,89 +1,147 @@
 Strength:
   - name: "Iron Fist"
-    rank:
-      - require:
-          Strength: 1
-      - require:
-          Strength: 1
-          level: 1
-      - require:
-          Strength: 1
-      - require:
-          Strength: 1
-      - require:
-          Strength: 1
+    rank: [0, 9, 18, 31, 46]
   - name: "Big Leagues"
+    rank: [0, 7, 15, 27, 42]
   - name: Armorer
+    rank: [0, 13, 25, 39]
   - name: Blacksmith
+    rank: [0, 16, 29]
   - name: "Heavy Gunner"
+    rank: [0, 11, 21, 35, 47]
   - name: "Strong Back"
+    rank: [0, 10, 20, 30]
   - name: "Steady Aim"
+    rank: [0, 28]
   - name: Basher
+    rank: [0, 5, 14, 26]
   - name: Rooted
+    rank: [0, 22, 43]
   - name: "Pain Train"
+    rank: [0, 24, 50]
 Perception:
   - name: Pickpocket
+    rank: [0, 6, 17, 31]
   - name: Rifleman
+    rank: [0, 9, 18, 31, 46]
   - name: Awareness
+    rank: [0]
   - name: Locksmith
+    rank: [0, 7, 18, 41]
   - name: "Demolition Expert"
+    rank: [0, 10, 22, 34]
   - name: "Night Person"
+    rank: [0, 25]
   - name: Refractor
+    rank: [0, 11, 21, 35, 42]
   - name: Sniper
+    rank: [0, 13, 26]
   - name: Penetrator
+    rank: [0, 28]
   - name: "Concentrated Fire"
+    rank: [0, 26, 50]
 Endurance:
   - name: Toughness
+    rank: [0, 9, 18, 31, 46]
   - name: "Lead Belly"
+    rank: [0, 8, 20]
   - name: Lifegiver
+    rank: [0, 8, 20]
   - name: "Chem Resistant"
+    rank: [0, 22]
   - name: Aquaboy
+    rank: [0, 21]
   - name: "Rad Resistant"
+    rank: [0, 13, 26]
   - name: "Adamantium Skeleton"
+    rank: [0, 13, 26]
   - name: Cannibal
+    rank: [0, 19, 38]
   - name: Ghoulish
+    rank: [0, 24, 48]
   - name: "Solar Powered"
+    rank: [0, 27, 50]
 Charisma:
   - name: "Cap Collector"
+    rank: [0, 20, 41]
   - name: "Man Hunter"
+    rank: [0, 7, 16]
   - name: "Lone Wanderer"
+    rank: [0, 17, 40]
   - name: "Attack Dog"
+    rank: [0, 9, 25]
   - name: "Animal Friend"
+    rank: [0, 12, 28]
   - name: "Local Leader"
+    rank: [0, 14]
   - name: "Party Boy"
+    rank: [0, 15, 37]
   - name: Inspirational
+    rank: [0, 19, 43]
   - name: "Wasteland Whisperer"
+    rank: [0, 21, 49]
   - name: Intimidation
+    rank: [0, 23, 50]
 Intelligence:
   - name: "V.A.N.S."
+    rank: [0]
   - name: Medic
+    rank: [0, 18, 30, 49]
   - name: "Gun Nut"
+    rank: [0, 13, 25, 39]
   - name: Hacker
+    rank: [0, 9, 21, 33]
   - name: Scrapper
+    rank: [0, 23]
   - name: "Science!"
+    rank: [0, 17, 28, 41]
   - name: Chemist
+    rank: [0, 16, 32, 45]
   - name: "Robotics Expert"
+    rank: [0, 19, 44]
   - name: "Nuclear Physicist"
+    rank: [0, 14, 26]
   - name: "Nerd Rage!"
+    rank: [0, 31, 50]
 Agility:
   - name: Gunslinger
+    rank: [0, 7, 15, 27, 42]
   - name: Commando
+    rank: [0, 11, 21, 35, 49]
   - name: Sneak
+    rank: [0, 5, 12, 23, 38]
   - name: "Mister Sandman"
+    rank: [0, 17, 30]
   - name: "Action Boy"
+    rank: [0, 18]
   - name: "Moving Target"
+    rank: [0, 24, 44]
   - name: Ninja
+    rank: [0, 16, 33]
   - name: "Quick Hands"
+    rank: [0, 28]
   - name: Blitz
+    rank: [0, 29]
   - name: "Gun Fu"
+    rank: [0, 26, 50]
 Luck:
   - name: "Fortune Finder"
+    rank: [0, 5, 25, 40]
   - name: Scrounger
+    rank: [0, 7, 24, 37]
   - name: "Bloody Mess"
+    rank: [0, 9, 31, 47]
   - name: "Mysterious Stranger"
+    rank: [0, 22, 41]
   - name: "Idiot Savant"
+    rank: [0, 11, 31]
   - name: "Better Criticals"
+    rank: [0, 15, 40]
   - name: "Critical Banker"
+    rank: [0, 17, 43]
   - name: "Grim Reaper's Sprint"
+    rank: [0, 19, 46]
   - name: "Four Leaf Clover"
+    rank: [0, 13, 32, 48]
   - name: Ricochet
+    rank: [0, 29, 50]
