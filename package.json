@@ -6,8 +6,10 @@
   "dependencies": {},
   "devDependencies": {
     "electron": "^1.7.10",
+    "electron-storage": "^1.0.7",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.0",
     "gulp-pug": "^3.3.0",
     "gulp-riot": "^1.1.1",
     "gulp-uglify": "^3.0.0",

@@ -11,6 +11,7 @@ const concat = require('gulp-concat')
 const fs = require('fs');
 const path = require('path');
 const uglify = require('gulp-uglify');
+const plumber = require('gulp-plumber');
 
 
 var srcDir = 'front'
@@ -25,8 +26,9 @@ function getDirs(dir) {
 
 gulp.task('build:pug', () => {
   gulp.src(path.join(srcDir, 'views/**/[^_]*.pug'))
-  .pipe(pug())
-  .pipe(gulp.dest(docDir))
+    .pipe(plumber())
+    .pipe(pug())
+    .pipe(gulp.dest(docDir))
 })
 
 gulp.task('build:riot', () => {
