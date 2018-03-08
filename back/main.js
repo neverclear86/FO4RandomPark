@@ -9,6 +9,14 @@ const yaml = require('node-yaml')
 
 const strs = yaml.readSync('data/strings.yml')
 
+const ipc = require('electron').ipcMain
+const ipcKeys = yaml.readSync("data/ipckeys.yml")
+
+
+global.ipc = ipc
+global.ipcKeys = ipcKeys
+global.strs = strs
+
 
 // IPCイベント系読み込み
 /**
@@ -32,17 +40,3 @@ function ls(dir) {
 ls("./back/ipc/")
   .map((f) => "." + f.substr(0, f.length - 3))
   .forEach((f) => require(f))
-
-
-// 前回の状態をロード
-storage.get(strs.LAST)
-.then(data => {
-  console.log("データ読み込み")
-})
-.catch(err => {
-  if (err.errno == -2) {
-    console.log("初期設定")
-  } else {
-    console.error(err)
-  }
-})

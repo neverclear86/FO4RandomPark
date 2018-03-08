@@ -1,1 +1,4 @@
-PARK_LIST: "read_park_list"
+ipcKeys: "ipcKeys"
+parkList: "read_park_list"
+loadLast: "load_last"
+saveLast: "save_last"

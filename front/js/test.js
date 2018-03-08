@@ -1,5 +1,5 @@
 (() => {
-  var ret = ipc.sendSync(ipcKeys.PARK_LIST)
+  var ret = ipc.sendSync(ipcKeys.parkList)
   console.log(ret)
 
 })()
