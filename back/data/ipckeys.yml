@@ -1,4 +1,4 @@
 ipcKeys: "ipcKeys"
-parkList: "read_park_list"
-loadLast: "load_last"
-saveLast: "save_last"
+parkList: "readParkList"
+loadChar: "loadCharacter"
+saveChar: "saveCharacter"

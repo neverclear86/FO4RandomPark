@@ -3,24 +3,32 @@ html
   include common/_head
   
   body
-    h1 四郎
-    h2 Lv.4
+    h1#name
+    h2 Lv.
+      span#level
     
     h3 SPECIAL & PARK
     table#park
+      - var special = ["Strength", "Perception", "Endurance", "Charisma", "Intelligence", "Agility", "Luck"]
       thead
-        - var special = ["Strength", "Perception", "Endurance", "Charisma", "Intelligence", "Agility", "Luck"]
           //- tr
           for val in special
-            th(id=val class="special " + val) #{val}
+            th(class="special-name " + val) #{val}
+          tr
+          for val in special
+            th(id=val class="special-value " + val) 1
       tbody
         - for (var rank = 1; rank <= 10; rank++)
           tr
           for val in special
-            th(class="park " + val rank=rank) #{val} #{rank}
+            th(class="park-name " + val rank=rank) #{val} #{rank}
+          tr
+          for val in special
+            th(id=val class="park-value " + val rank=rank) 0
           
        
     
   script(src="/docs/tags/common.js")
   script(src="/docs/js/mount.js")
-  script(src="/docs/js/test.js")
+  script(src="/docs/js/lib/character.js")
+  script(src="/docs/js/index/main.js")

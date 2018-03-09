@@ -1,0 +1,4 @@
+(() => {
+
+  readCharacter("Shirou")
+})()
